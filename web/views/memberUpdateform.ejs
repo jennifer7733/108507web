@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>健康老師雞</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/core-img/favicon.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+        <img src="/img/core-img/favicon.png" alt="">
+    </div>
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="Type any keywords...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <!-- Breaking News -->
+                    <div class="col-12 col-sm-6">
+                        <div class="breaking-news">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">歡迎回來！</a></li>
+                                    <li><a href="#">Hello!</a></li>
+                                    <li><a href="#">歡迎來到健康老師雞</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Social Info -->
+                    <div class="col-12 col-sm-6">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="delicious-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="deliciousNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="/Memberindex"><img src="img/core-img/chicken.png" alt="" width="300px" height="250px"></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="/Memberindex">Home</a></li>
+                                    <li><a href="#">Recipe</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/MRecipeAll">全部料理</a></li>
+                                            <li><a href="/MLightmeal">輕食料理</a></li>
+                                            <li><a href="/MMgmeal">増肌減脂料理</a></li>
+                                            <li><a href="/MFamilydish">家常菜</a></li>
+                                            <li><a href="/MSnack">小點心</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Ingredients</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/MIngredientsAll">ALL</a></li>
+                                            <li><a href="/MGrainroots">五穀根莖類</a></li>
+                                            <li><a href="/MMeatandeggs">蛋豆魚肉類</a></li>
+                                            <li><a href="/MVegetable">蔬菜類</a></li>
+                                            <li><a href="/MFruit">水果類</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Member</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/memberUpdateform">修改個人資料</a></li>
+                                            <li><a href="/userLogout">登出</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/cart">Cart</a></li>
+                                    <li><a href="#">Blog</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/Mblog">文章</a></li>
+                                            <li><a href="/Mblog2">好文分享</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <div id="main">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form role="form" method="post" action="/memberUpdate">
+
+                        <div class="form-group">
+                            <label>會員帳號</label>
+                            <input type="text"  maxlength="50" readonly value="<%= item.memberAccount %>" class="form-control" name="memberAccount"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>姓名</label>
+                            <input type="text" maxlength="10" value="<%= item.memberName %>" class="form-control" name="memberName"/>
+                        </div>
+                                            
+
+                        <div class="form-group">         
+                            <label>性別</label>
+                                <select type="text" value="<%= item.memberSex %>" class="form-control" name="memberSex" />
+                                    <option value="男"> 男 </option>
+                                    <option value="女"> 女 </option>
+                                </select>
+                        </div>
+                                        
+                        <div class="form-group">         
+                            <label>食物偏好</label>
+                                <select type="text" value="<%= item.memberLike %>" class="form-control" name="memberLike"/>
+                                    <option value="輕食料理"> 輕食料理 </option>
+                                    <option value="増肌減脂料理"> 増肌減脂料理 </option>
+                                    <option value="減脂料理"> 減脂料理 </option>
+                                    <option value="家常菜"> 家常菜 </option>
+                                    <option value="小點心"> 小點心 </option>
+                                </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>地址</label>
+                            <input type="text" value="<%= item.memberAddress %>" maxlength="50"  class="form-control" name="memberAddress"/>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label>連絡電話</label>
+                            <input type="text" value="<%= item.memberPhone %>" maxlength="50"  class="form-control" name="memberPhone"/>
+                        </div>
+                                            
+                        <div class="form-group">
+                            <label>會員密碼</label>
+                            <input type="password" value="<%= item.memberPassword %>" maxlength="50" class="form-control" name="memberPassword"/>
+                        </div>
+
+                        </br>
+                        <input type="submit" value="修改" style="width:120px;height:40px;border-radius: 8px;background:#cee5d5;border:2px solid #afd1b9;">	
+                    </form>
+                </div>
+            </div>	
+		</div>
+	</div>
+
+    
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                    <!-- Footer Social Info -->
+                    <div class="footer-social-info text-right">
+                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <!-- Footer Logo -->
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="/img/core-img/chicken.png" alt="" width="150px" height="100px"></a>
+                    </div>
+                    <!-- Copywrite -->
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">108507</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
